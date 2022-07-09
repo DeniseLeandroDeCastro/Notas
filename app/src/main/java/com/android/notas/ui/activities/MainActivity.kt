@@ -1,9 +1,11 @@
-package com.android.notas
+package com.android.notas.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.android.notas.NotasAdapter
+import com.android.notas.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
