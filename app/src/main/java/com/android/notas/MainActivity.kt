@@ -8,10 +8,17 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val notasAdapter: NotasAdapter by lazy {
+            NotasAdapter()
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         setSupportActionBar(toolbar)
+
+        val size = notasAdapter.itemCount
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
